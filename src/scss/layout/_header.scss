@@ -1,0 +1,9 @@
+.header{
+    position: relative;
+    &__menu{
+        background-color: $color-header;
+        position: absolute;
+        width: rem(37);
+        padding: 10px;
+    }
+}

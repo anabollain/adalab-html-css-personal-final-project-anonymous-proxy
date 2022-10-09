@@ -1,0 +1,41 @@
+.hero{
+    height: 100vh;
+    background: url('../images/cover.jpeg') no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    gap: rem(20);
+    padding-bottom: rem(34);
+    &__title{
+        font-family: $font-title;
+        text-transform: uppercase;
+        word-spacing: 100vw;
+        text-align: center;
+        color: $font-color-white;
+        font-weight: bold;
+        font-size: rem(42);
+        line-height: rem(55);
+    }
+    &__text{
+        color: $font-color-white;
+        font-size: rem(16);
+        line-height: rem(19);
+    }
+    &__scroll{
+        width: 37.9px; /*Verificar si es mejor que rem*/
+        height: 37.9px; /*Verificar si es mejor que rem*/
+        background-color: #fff;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &--image{
+            width: 16.8px;
+            height: 9.6px;
+        }
+    }
+}
+
