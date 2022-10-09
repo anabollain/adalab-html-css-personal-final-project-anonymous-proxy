@@ -1,0 +1,40 @@
+.firstModule{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 37px 15px 35px 15px;
+    &__subtitle{
+        color: $font-color-details;
+        font-size: rem(14);
+        font-weight: 400;
+        line-height: rem(30);
+    }
+    &__title{
+        color: $font-color-black;
+        font-size: rem(24);
+        font-weight: bold;
+        text-transform: capitalize;
+        line-height: rem(30);
+        margin-bottom: rem(20);
+    }
+    &__text{
+        color: $font-color-grey;
+        font-size: rem(18);
+        line-height: rem(30);
+    }
+    &__link{
+        width: 76px;
+        height: 45px;
+        border: solid 3px $font-color-links; /*Confirm weight 2px or more*/
+        border-radius: 22.5px;
+        color: $font-color-links;
+        @include link;
+        font-size: rem(20);
+        font-weight: 500;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: rem(26);
+        margin-bottom: rem(45);
+    }
+}
