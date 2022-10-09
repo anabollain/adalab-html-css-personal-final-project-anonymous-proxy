@@ -1,0 +1,38 @@
+.secondModule{
+    display: grid;
+    grid-template-columns: 1fr;
+    padding-top: 29px;
+    padding-bottom: 60px;
+    background-color: $color-secondModule;
+    justify-items: center;
+    &__title{
+        font-family: $font-family-second;
+        font-size: rem(24);
+        font-weight: bold;
+        text-transform: capitalize;
+        text-align: center;
+        background-color: red;
+        padding-bottom: rem(49);
+    }
+    &__articles{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
+        row-gap: rem(44);
+    }
+    &__link{
+        width: 184px;
+        height: 45px;
+        background-color: $font-color-links;
+        border-radius: 22.5px;
+        color: $font-color-white;
+        @include link;
+        font-size: rem(20);
+        font-weight: 500;
+        margin-top: 41px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
