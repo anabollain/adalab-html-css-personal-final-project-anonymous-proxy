@@ -2,6 +2,15 @@
     text-decoration: none;
 }
 
+@mixin linkFooter{
+    text-decoration: none;
+    color: $font-color-white;
+    text-transform: uppercase;
+    font-size: rem(16);
+    line-height: rem(30);
+    font-weight: 400;
+}
+
 @mixin nav {
     list-style: none;
 }
