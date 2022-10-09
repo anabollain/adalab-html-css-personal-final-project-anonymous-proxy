@@ -23,11 +23,13 @@
             width: 20.6px;
             height: 24px;
         }
+        transition: background-color 2s linear;
+        &:hover{
+            background-color: $color-blue-medium;
+        } /*VERIFY HOVER WITH TRANSITIONS*/
+
     }   
-    /*&__scroll:hover{
-        transition: 1s;
-        background-color: $color-blue-medium;
-    }*/ /*MIRAR HOVER*/
+    
     &__menu{
         display: flex;
         flex-direction: column;

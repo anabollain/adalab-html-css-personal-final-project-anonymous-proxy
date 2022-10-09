@@ -64,6 +64,12 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        transition: 1s ease;
+        &:hover{
+            background-color: $font-color-white;
+            color: $font-color-links;
+            border: solid 3px $font-color-links;
+        }
         @media screen and (min-width:768px){
             width: 210px;
             margin-top: rem(57);

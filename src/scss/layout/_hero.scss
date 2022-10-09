@@ -72,11 +72,13 @@
                 height: 11.7px;
             }
         }
+        transition: background-color 0.5s, transform 1s ease;
+        &:hover{
+            background-color: $color-blue-medium;
+            transform-origin: center;
+            transform: rotate(360deg);
+        } /*VERIFY HOVER WITH TRANSITIONS*/
     }
-    /*&__scroll:hover{
-        transition: 1s;
-        background-color: $color-blue-medium;
-        transform: scale(1.2);
-    }*/ /*MIRAR HOVER*/
+    
 }
 
