@@ -20,6 +20,10 @@
             height: 24px;
         }
     }
+    &__scroll:hover{
+        transition: 1s;
+        background-color: $color-blue-medium;
+    }
     &__menuSite{
         @include nav;
         padding-top: rem(64.5);
