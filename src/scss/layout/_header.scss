@@ -3,7 +3,25 @@
     &__menu{
         background-color: $color-header;
         position: absolute;
-        width: rem(37);
+        width: 37px;
+        height: 22px;
+        overflow: hidden;
         padding: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &--image{
+            position:absolute;
+            width: 13.5px;
+            transform: translateY(-60%);
+            @media screen and (min-width:768px){
+                transform: none;
+                width: 15.1px;
+            }
+        }
+        @media screen and (min-width:768px){
+            width: 44px;
+            height: 44px;
+        }
     }
 }

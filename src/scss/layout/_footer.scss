@@ -2,57 +2,77 @@
     background-color: $color-footer;
     position: relative;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
+    padding-top: rem(65);
     padding-bottom: rem(36);
+    @media screen and (min-width:768px){
+        padding: 50px 39px 40px 39px;
+    }
     &__scroll{
         width: 45px; /*Verificar si es mejor que rem*/
         height: 45px; /*Verificar si es mejor que rem*/
         background-color: #fff;
         border-radius: 50%;
+        position: absolute;
+        top: 0;
         transform: translateY(-50%);
         display: flex;
         justify-content: center;
         align-items: center;
-        position: absolute;
         &--image{
             width: 20.6px;
             height: 24px;
         }
-    }
-    &__scroll:hover{
+    }   
+    /*&__scroll:hover{
         transition: 1s;
         background-color: $color-blue-medium;
-    }
-    &__menuSite{
-        @include nav;
-        padding-top: rem(64.5);
+    }*/ /*MIRAR HOVER*/
+    &__menu{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         text-align: center;
-        &--link{
-        @include linkFooter;
+        gap: rem(30);
+        @media screen and (min-width:768px){
+            flex-direction: row;
+            align-items: flex-start;
+            text-align: left;
         }
-    }
-    &__menuSocial{
-        @include nav;
-        padding-top: rem(30);
-        text-align: center;
-        &--link{
-        @include linkFooter;
-        }
-    }
-    &__small{
-        padding-top: rem(32);
-        font-size: rem(14);
-        line-height: rem(30);
-        color: $font-color-white;
-        text-align: center;
-        &--text{
+            &--site{
+                @include nav;
+                    .link{
+                    @include linkFooter;
+                    }
+                @media screen and (min-width:768px){
+                    min-width: 210px;
+                } 
+            }
+            &--social{
+                @include nav;
+                    .link{
+                        @include linkFooter;
+                }
+                @media screen and (min-width:768px){
+                    min-width: 210px;
+                }
+            }
+            &--small{
+            font-size: rem(14);
+            line-height: rem(30);
+            color: $font-color-white;
             text-transform: lowercase;
+            @media screen and (min-width:768px){
+                min-width: 210px;
+                order: -1;
+            }
             .fa-solid{
                 color: $font-color-links;
                 padding: rem(5);
                 transform: rotateX(30deg);
             }
-        }
+            }
     }
-}
+    }

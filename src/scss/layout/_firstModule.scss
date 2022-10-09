@@ -4,6 +4,9 @@
     align-items: flex-start;
     margin-top: 24.9px;
     padding: 37px 15px 45px 15px;
+    @media screen and (min-width:768px){
+        padding: 37px 39px 60px 39px;
+    }
     &__subtitle{
         color: $font-color-details;
         font-size: rem(14);
@@ -17,11 +20,19 @@
         text-transform: capitalize;
         line-height: rem(30);
         margin-bottom: rem(20);
+        @media screen and (min-width:768px){
+            font-size: rem(26);
+            margin-top: rem(5);
+            margin-bottom: rem(27);
+        }
     }
     &__text{
         color: $font-color-grey;
         font-size: rem(18);
         line-height: rem(30);
+        @media screen and (min-width:768px){
+            font-size: rem(20);
+        }
     }
     &__link{
         width: 76px;
@@ -36,5 +47,9 @@
         justify-content: center;
         align-items: center;
         margin-top: rem(26);
+        @media screen and (min-width:768px){
+            width: 91px;
+            margin-top: rem(27);
+        }
     }
 }

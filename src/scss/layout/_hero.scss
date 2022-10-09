@@ -9,6 +9,9 @@
     justify-content: flex-end;
     gap: rem(20);
     padding-bottom: rem(34);
+    @media screen and (min-width:768px){
+        padding-bottom: rem(45);
+    }
     &__title{
         font-family: $font-family-second;
         text-transform: uppercase;
@@ -18,11 +21,21 @@
         font-weight: bold;
         font-size: rem(42);
         line-height: rem(55);
+        @media screen and (min-width:768px){
+            font-size: rem(80);
+            line-height: rem(106);
+        }
     }
     &__text{
         color: $font-color-white;
         font-size: rem(16);
         line-height: rem(19);
+        @media screen and (min-width:768px){
+            font-size: rem(24);
+            line-height: rem(28);
+            width: rem(340);
+            text-align: center;
+        }
     }
     &__scroll{
         width: 37.9px; /*Verificar si es mejor que rem*/
@@ -32,15 +45,23 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        @media screen and (min-width:768px){
+            width: 42.5px;
+            height: 45px;
+        }
         &--image{
             width: 16.8px;
             height: 9.6px;
+            @media screen and (min-width:768px){
+                width: 18.9px;
+                height: 11.7px;
+            }
         }
     }
-    &__scroll:hover{
+    /*&__scroll:hover{
         transition: 1s;
         background-color: $color-blue-medium;
         transform: scale(1.2);
-    }
+    }*/ /*MIRAR HOVER*/
 }
 
