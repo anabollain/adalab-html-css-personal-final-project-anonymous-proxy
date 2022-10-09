@@ -7,14 +7,21 @@
     @media screen and (min-width:768px){
         padding: 37px 39px 60px 39px;
     }
+    @media  screen and (min-width:1200px){
+        padding: 65px 275px 60px 275px;
+    }
     &__subtitle{
         color: $font-color-details;
         font-size: rem(14);
         font-weight: 400;
         line-height: rem(30);
+        @media screen and (min-width:1200px){
+            font-size: rem(16);
+        }
     }
     &__title{
         color: $font-color-black;
+        font-family: $font-family-second;
         font-size: rem(24);
         font-weight: bold;
         text-transform: capitalize;
@@ -24,6 +31,11 @@
             font-size: rem(26);
             margin-top: rem(5);
             margin-bottom: rem(27);
+        }
+        @media screen and (min-width:1200px){
+            font-size: rem(32);
+            line-height: rem(45);
+            margin-bottom: rem(32);
         }
     }
     &__text{
@@ -50,6 +62,9 @@
         @media screen and (min-width:768px){
             width: 91px;
             margin-top: rem(27);
+        }
+        @media screen and (min-width:1200px){
+            width: 160px;
         }
     }
 }

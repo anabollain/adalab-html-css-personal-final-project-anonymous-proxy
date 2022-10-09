@@ -5,6 +5,12 @@
     padding-bottom: 60px;
     background-color: $color-secondModule;
     justify-items: center;
+    @media  screen and (min-width:768px){
+        padding-top: 36px;
+    }
+    @media  screen and (min-width:1200px){
+        padding-top: 61px;
+    }
     &__title{
         font-family: $font-family-second;
         font-size: rem(24);
@@ -18,6 +24,11 @@
         @media  screen and (min-width:768px) {
             font-size: rem(26);
             line-height: rem(45);
+            margin-bottom: rem(38);
+        }
+        @media  screen and (min-width:1200px) {
+            font-size: rem(32);
+            margin-bottom: rem(43);
         }
     }
     &__articles{
@@ -33,6 +44,11 @@
             padding-left: rem(40);
             padding-right: rem(40);
             width: 100%;
+        }
+        @media screen and (min-width:1200px){
+            column-gap: rem(35);
+            padding-left: rem(85);
+            padding-right: rem(85);
         }
     }
     &__link{
@@ -51,6 +67,9 @@
         @media screen and (min-width:768px){
             width: 210px;
             margin-top: rem(57);
+        }
+        @media screen and (min-width:1200px){
+            width: 255px;
         }
     }
 

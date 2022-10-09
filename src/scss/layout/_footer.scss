@@ -3,7 +3,6 @@
     position: relative;
     display: flex;
     justify-content: center;
-    align-items: center;
     padding-top: rem(65);
     padding-bottom: rem(36);
     @media screen and (min-width:768px){
@@ -48,6 +47,9 @@
                     }
                 @media screen and (min-width:768px){
                     min-width: 210px;
+                } 
+                @media screen and (min-width:1200px){
+                    min-width: 160px;
                 } 
             }
             &--social{
