@@ -3,7 +3,7 @@
     grid-template-columns: 1fr;
     padding-top: rem(29);
     padding-bottom: rem(60);
-    background-color: $color-secondModule;
+    background-color: $colorSecondModule;
     justify-items: center;
     @media  screen and (min-width:768px){
         padding-top: rem(36);
@@ -12,7 +12,7 @@
         padding-top: rem(61);
     }
     &__title{
-        font-family: $font-family-second;
+        font-family: $fontFamilySecond;
         font-weight: bold;
         text-transform: capitalize;
         font-size: rem(24);
@@ -52,9 +52,9 @@
     &__link{
         width: 184px;
         height: 45px;
-        background-color: $font-color-links;
+        background-color: $fontColorLinks;
         border-radius: 22.5px;
-        color: $font-color-white;
+        color: $fontColorWhite;
         @include link;
         font-size: rem(20);
         line-height: rem(45);
@@ -64,9 +64,9 @@
         justify-content: center;
         transition: 1s ease;
         &:hover{
-            background-color: $font-color-white;
-            color: $font-color-links;
-            border: solid 3px $font-color-links;
+            background-color: $fontColorWhite;
+            color: $fontColorLinks;
+            border: solid 3px $fontColorLinks;
         }
         @media screen and (min-width:768px){
             width: 210px;

@@ -1,5 +1,5 @@
 .footer{
-    background-color: $color-footer;
+    background-color: $colorFooter;
     position: relative;
     display: flex;
     justify-content: center;
@@ -30,13 +30,13 @@
             background-color: #fff; scale: 1.2;
         }
         25%{
-            background-color: $color-blue-light; scale: 1;
+            background-color: $colorBlueLight; scale: 1;
         }
         50%{
-            background-color: $color-blue-medium; scale: 1.2;
+            background-color: $colorBlueMedium; scale: 1.2;
         }
         100%{
-            background-color: $color-blue-dark; scale: 1;
+            background-color: $colorBlueDark; scale: 1;
         }
     }
     &__menu{
@@ -75,7 +75,7 @@
             &--small{
             font-size: rem(16); /*Original font-size 14*/
             line-height: rem(30);
-            color: $font-color-white;
+            color: $fontColorWhite;
             text-transform: lowercase;
             display: flex;
             flex-direction: column;
@@ -85,7 +85,7 @@
                 order: -1;
             }
             .fa-solid{
-                color: $font-color-links;
+                color: $fontColorLinks;
                 padding: rem(5);
                 transform: rotateX(30deg);
             }

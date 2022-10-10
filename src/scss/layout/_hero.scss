@@ -15,11 +15,11 @@
         padding-bottom: rem(13);
     }
     &__title{
-        font-family: $font-family-second;
+        font-family: $fontFamilySecond;
         text-transform: uppercase;
         word-spacing: 100vw;
         text-align: center;
-        color: $font-color-white;
+        color: $fontColorWhite;
         font-weight: bold;
         font-size: rem(42);
         line-height: rem(55);
@@ -33,7 +33,7 @@
         }
     }
     &__text{
-        color: $font-color-white;
+        color: $fontColorWhite;
         font-size: rem(16);
         line-height: rem(19);
         margin-top: rem(15);
@@ -59,7 +59,7 @@
         margin-top: rem(35.2);
         transition: background-color 0.5s, transform 1s ease;
         &:hover{
-            background-color: $color-blue-medium;
+            background-color: $colorBlueMedium;
             transform-origin: center;
             transform: rotate(360deg);
         }
