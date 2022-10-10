@@ -47,5 +47,5 @@ The following tools have been used when solving the project:
     - Animation
  - GIT version control
  - Command shell
-<br>
+
 **Thank you!**
