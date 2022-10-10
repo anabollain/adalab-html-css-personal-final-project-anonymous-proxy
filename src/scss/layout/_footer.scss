@@ -11,7 +11,7 @@
     &__scroll{
         width: 45px; 
         height: 45px; 
-        background-color: #fff;
+        /*background-color: #fff;*/
         border-radius: 50%;
         position: absolute;
         top: 0;
@@ -23,12 +23,22 @@
             width: 20.6px;
             height: 24px;
         }
-        transition: background-color 2s linear;
-        &:hover{
-            background-color: $color-blue-medium;
-        } /*VERIFY HOVER WITH TRANSITIONS*/
+        animation: pulse 5s linear 2s infinite alternate;
     }   
-    
+    @keyframes pulse {
+        0%{
+            background-color: #fff; scale: 1.2;
+        }
+        25%{
+            background-color: $color-blue-light; scale: 1;
+        }
+        50%{
+            background-color: $color-blue-medium; scale: 1.2;
+        }
+        100%{
+            background-color: $color-blue-dark; scale: 1;
+        }
+    }
     &__menu{
         display: flex;
         flex-direction: column;
