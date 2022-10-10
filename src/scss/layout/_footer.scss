@@ -4,13 +4,13 @@
     display: flex;
     justify-content: center;
     padding-top: rem(65);
-    padding-bottom: rem(36);
+    padding-bottom: rem(45);
     @media screen and (min-width:768px){
-        padding: 50px 39px 40px 39px;
+        padding: rem(50) rem(39) rem(40) rem(39);
     }
     &__scroll{
-        width: 45px; /*Verificar si es mejor que rem*/
-        height: 45px; /*Verificar si es mejor que rem*/
+        width: 45px; 
+        height: 45px; 
         background-color: #fff;
         border-radius: 50%;
         position: absolute;
@@ -27,7 +27,6 @@
         &:hover{
             background-color: $color-blue-medium;
         } /*VERIFY HOVER WITH TRANSITIONS*/
-
     }   
     
     &__menu{
@@ -64,11 +63,14 @@
                 }
             }
             &--small{
-            font-size: rem(14);
+            font-size: rem(16); /*Original font-size 14*/
             line-height: rem(30);
             color: $font-color-white;
             text-transform: lowercase;
+            display: flex;
+            flex-direction: column;
             @media screen and (min-width:768px){
+                line-height: rem(25);
                 min-width: 210px;
                 order: -1;
             }

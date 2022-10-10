@@ -36,33 +36,40 @@
         color: $font-color-white;
         font-size: rem(16);
         line-height: rem(19);
-        margin-top: rem(20);
+        margin-top: rem(15);
         @media screen and (min-width:768px){
             font-size: rem(24);
             line-height: rem(28);
             width: rem(340);
             text-align: center;
+            margin-top: rem(30); /*Increased from 20*/
         }
         @media screen and (min-width:1200px){
             width: 100%;
         }
     }
     &__scroll{
-        width: 37.9px; /*Verificar si es mejor que rem*/
-        height: 37.9px; /*Verificar si es mejor que rem*/
+        width: 37.9px; 
+        height: 37.9px; 
         background-color: #fff;
         border-radius: 50%;
         display: flex;
         justify-content: center;
         align-items: center;
         margin-top: rem(35.2);
+        transition: background-color 0.5s, transform 1s ease;
+        &:hover{
+            background-color: $color-blue-medium;
+            transform-origin: center;
+            transform: rotate(360deg);
+        }
         @media screen and (min-width:768px){
             width: 45px;
             height: 45px;
             margin-top: rem(13);
         }
         @media screen and (min-width:1200px){
-            margin-top: rem(34) ;
+            margin-top: rem(34);
         }
         &--image{
             width: 16.8px;
@@ -72,13 +79,16 @@
                 height: 11.7px;
             }
         }
-        transition: background-color 0.5s, transform 1s ease;
-        &:hover{
-            background-color: $color-blue-medium;
-            transform-origin: center;
-            transform: rotate(360deg);
-        } /*VERIFY HOVER WITH TRANSITIONS*/
+    }  
+}
+
+#hero {
+    scroll-margin-top: initial;
+    @media screen and (min-width:768px){
+        scroll-margin-top: initial;
     }
-    
+    @media screen and (min-width:1200px){
+        scroll-margin-top: initial;
+    }
 }
 
