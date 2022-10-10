@@ -33,7 +33,7 @@
         grid-template-columns: 1fr;
         grid-template-rows: repeat(3, 1fr);
         row-gap: rem(44);
-        @media screen and (min-width:768px) {
+        @include mediaTablet() {
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
             grid-template-rows: 1fr;
@@ -41,7 +41,7 @@
             padding-left: rem(40);
             padding-right: rem(40);
         }
-        @media screen and (min-width:1200px){
+        @include mediaDesktop(){
             column-gap: rem(35);
             padding-left: rem(85);
             padding-right: rem(85);
@@ -65,11 +65,11 @@
             color: $fontColorLinks;
             border: solid 3px $fontColorLinks;
         }
-        @media screen and (min-width:768px){
+        @include mediaTablet(){
             width: 210px;
             margin-top: rem(57);
         }
-        @media screen and (min-width:1200px){
+        @include mediaDesktop(){
             width: 255px;
         }
     }
@@ -78,10 +78,10 @@
 
 #secondModule {
     scroll-margin-top: initial;
-    @media screen and (min-width:768px){
+    @include mediaTablet(){
         scroll-margin-top: initial;
     }
-    @media screen and (min-width:1200px){
+    @include mediaDesktop(){
         scroll-snap-align: initial;
     }
 }

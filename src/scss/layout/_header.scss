@@ -9,7 +9,7 @@
         padding: 10px;
         display: flex;
         align-items: center;
-        @media screen and (min-width:768px){
+        @include mediaTablet(){
             width: 44px;
             height: 44px;
             justify-content: center;
@@ -17,7 +17,7 @@
         &--image{
             width: 13.5px;
             transform: translateY(-25%);
-            @media screen and (min-width:768px){
+            @include mediaTablet(){
                 transform: none;
                 width: 16px;
             }

@@ -8,10 +8,10 @@
     align-items: center;
     justify-content: flex-end;
     padding-bottom: rem(34);
-    @media screen and (min-width:768px){
+    @include mediaTablet(){
         padding-bottom: rem(45);
     }
-    @media screen and (min-width:1200px){
+    @include mediaDesktop(){
         padding-bottom: rem(13);
     }
     &__title{
@@ -22,10 +22,10 @@
         color: $fontColorWhite;
         font-weight: bold;
         @include t(rem(42), rem(55));
-        @media screen and (min-width:768px){
+        @include mediaTablet(){
             @include t(rem(80), rem(106));
         }
-        @media screen and (min-width:1200px){
+        @include mediaDesktop(){
             @include t(rem(100), rem(132));
         }
     }
@@ -33,13 +33,13 @@
         color: $fontColorWhite;
         @include t(rem(16), rem(19));
         margin-top: rem(15);
-        @media screen and (min-width:768px){
+        @include mediaTablet(){
             @include t(rem(24), rem(28));
             width: rem(340);
             text-align: center;
             margin-top: rem(30); /*Increased from 20*/
         }
-        @media screen and (min-width:1200px){
+        @include mediaDesktop(){
             width: 100%;
         }
     }
@@ -58,18 +58,18 @@
             transform-origin: center;
             transform: rotate(360deg);
         }
-        @media screen and (min-width:768px){
+        @include mediaTablet(){
             width: 45px;
             height: 45px;
             margin-top: rem(13);
         }
-        @media screen and (min-width:1200px){
+        @include mediaDesktop(){
             margin-top: rem(34);
         }
         &--image{
             width: 16.8px;
             height: 9.6px;
-            @media screen and (min-width:768px){
+            @include mediaTablet(){
                 width: 18.9px;
                 height: 11.7px;
             }
@@ -79,10 +79,10 @@
 
 #hero {
     scroll-margin-top: initial;
-    @media screen and (min-width:768px){
+    @include mediaTablet(){
         scroll-margin-top: initial;
     }
-    @media screen and (min-width:1200px){
+    @include mediaDesktop(){
         scroll-margin-top: initial;
     }
 }
