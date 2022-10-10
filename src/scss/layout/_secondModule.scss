@@ -15,18 +15,16 @@
         font-family: $fontFamilySecond;
         font-weight: bold;
         text-transform: capitalize;
-        font-size: rem(24);
-        line-height: rem(30);
+        @include t(rem(24), rem(30));
         margin-left: rem(15);
         margin-right: rem(15);
         margin-bottom: rem(49);
         @media  screen and (min-width:768px) {
-            font-size: rem(26);
-            line-height: rem(45);
+            @include t(rem(26), rem(45));
             margin-bottom: rem(38);
         }
         @media  screen and (min-width:1200px) {
-            font-size: rem(32);
+            @include t(rem(32), rem(45));
             margin-bottom: rem(43);
         }
     }
@@ -56,8 +54,7 @@
         border-radius: 22.5px;
         color: $fontColorWhite;
         @include link;
-        font-size: rem(20);
-        line-height: rem(45);
+        @include t(rem(20), rem(45));
         font-weight: 500;
         margin-top: rem(41);
         display: flex;

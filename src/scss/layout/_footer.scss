@@ -73,14 +73,13 @@
                 }
             }
             &--small{
-            font-size: rem(16); /*Original font-size 14*/
-            line-height: rem(30);
-            color: $fontColorWhite;
-            text-transform: lowercase;
-            display: flex;
-            flex-direction: column;
+                @include t(rem(16), rem(30)); /*Original font-size 14*/
+                color: $fontColorWhite;
+                text-transform: lowercase;
+                display: flex;
+                flex-direction: column;
             @media screen and (min-width:768px){
-                line-height: rem(25);
+                @include t(rem(16), rem(25));
                 min-width: 210px;
                 order: -1;
             }

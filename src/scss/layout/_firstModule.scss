@@ -13,10 +13,9 @@
     &__subtitle{
         color: $fontColorDetails;
         font-weight: 400;
-        font-size: rem(14);
-        line-height: rem(30);
+        @include t(rem(14), rem(30));
         @media screen and (min-width:1200px){
-            font-size: rem(16);
+            @include t(rem(16), rem(30));
         }
     }
     &__title{
@@ -24,27 +23,23 @@
         font-family: $fontFamilySecond;
         font-weight: bold;
         text-transform: capitalize;
-        font-size: rem(24);
-        line-height: rem(30);
+        @include t(rem(24), rem(30));
         margin-bottom: rem(20);
         @media screen and (min-width:768px){
-            font-size: rem(26);
-            line-height: rem(45);
+            @include t(rem(26), rem(45));
             margin-top: rem(5);
             margin-bottom: rem(27);
         }
         @media screen and (min-width:1200px){
-            font-size: rem(32);
-            line-height: rem(45);
+            @include t(rem(32), rem(45));
             margin-bottom: rem(32);
         }
     }
     &__text{
         color: $fontColorGrey;
-        font-size: rem(18);
-        line-height: rem(30);
+        @include t(rem(18), rem(30));
         @media screen and (min-width:768px){
-            font-size: rem(20);
+            @include t(rem(20), rem(30));
         }
     }
     &__link{
@@ -54,8 +49,7 @@
         border-radius: 22.5px;
         color: $fontColorLinks;
         @include link;
-        font-size: rem(20);
-        line-height: rem(45);
+        @include t(rem(20), rem(45));
         font-weight: 500;
         display: flex;
         justify-content: center;

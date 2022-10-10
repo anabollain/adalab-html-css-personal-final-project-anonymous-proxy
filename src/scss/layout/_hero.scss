@@ -21,25 +21,20 @@
         text-align: center;
         color: $fontColorWhite;
         font-weight: bold;
-        font-size: rem(42);
-        line-height: rem(55);
+        @include t(rem(42), rem(55));
         @media screen and (min-width:768px){
-            font-size: rem(80);
-            line-height: rem(106);
+            @include t(rem(80), rem(106));
         }
         @media screen and (min-width:1200px){
-            font-size: rem(100);
-            line-height: rem(132);
+            @include t(rem(100), rem(132));
         }
     }
     &__text{
         color: $fontColorWhite;
-        font-size: rem(16);
-        line-height: rem(19);
+        @include t(rem(16), rem(19));
         margin-top: rem(15);
         @media screen and (min-width:768px){
-            font-size: rem(24);
-            line-height: rem(28);
+            @include t(rem(24), rem(28));
             width: rem(340);
             text-align: center;
             margin-top: rem(30); /*Increased from 20*/

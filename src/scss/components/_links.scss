@@ -6,8 +6,7 @@
     text-decoration: none;
     color: $fontColorWhite;
     text-transform: uppercase;
-    font-size: rem(16);
-    line-height: rem(30);
+    @include t(rem(16), rem(30));
     padding: 10px;
     font-weight: 400;
 }

@@ -9,17 +9,15 @@
     &--title{
         font-family: $fontFamilySecond;
         font-weight: bold;
-        font-size: rem(18);
-        line-height: rem(30);
+        @include t(rem(18), rem(30));
         @media screen and (min-width:768px){
-            font-size: rem(24);
+            @include t(rem(24), rem(30));
         }
     }
     &--desc{
-        font-size: rem(18) ;
-        line-height: rem(30) ;
+        @include t(rem(18), rem(30));
         @media screen and (min-width:768px){
-            font-size: rem(20);
+            @include t(rem(20), rem(30));
             padding-top: rem(18);
         }
     }
