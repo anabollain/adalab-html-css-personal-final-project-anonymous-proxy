@@ -5,21 +5,23 @@
         position: fixed;
         width: 37.1px;
         height: 22px;
-        overflow: hidden;
-        padding: 10px;
         display: flex;
+        justify-content: center;
         align-items: center;
+        overflow: hidden;
         @include mediaTablet(){
             width: 44px;
             height: 44px;
-            justify-content: center;
         }
         &--image{
+            display: flex;
+            justify-content: center;
+            align-items: center;
             width: 13.5px;
-            transform: translateY(-25%);
+            transform: translateY(-50%);
             @include mediaTablet(){
+                padding: 30px;
                 transform: none;
-                width: 16px;
             }
         }  
     }
